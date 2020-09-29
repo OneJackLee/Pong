@@ -1,0 +1,37 @@
+<!-- IN HTML page, I have added a table in order to show the score board of pong game
+    In typescript document.getElementById use used to manipulate the value in table-->
+<html>
+    <head>
+        <style>
+            @import url(style.css);
+            p.highlight {
+                color: red;
+            }
+            svg {
+                background-color: rgb(41, 41, 36);
+            }
+        </style>
+        <script src="svgelement.js"></script>
+        <script src="observable.js"></script>
+        <script src="pong.js"></script>
+    </head>
+    <body>
+        <h1>Pong</h1>
+        
+        <!-- table to show the score board-->
+        <table width="600">
+            <tr>
+              <th style="color: grey" width="300" align="center">AI</th> 
+              <th style="color: black" width="300" align="center">User</th>
+            </tr>
+            <tr>
+              <td id="AIScore" style="color: grey" align="center"> Click the ball</td>
+              <td id="UserScore" style="color: black" align="center"> to start the game</td>
+            </tr>      
+          </table>
+                  
+
+        <svg id="canvas" width="600" height="600"/>
+
+    </body>
+</html>
